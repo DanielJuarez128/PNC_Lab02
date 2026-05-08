@@ -4,10 +4,12 @@ import org.example.lab02.dto.PirataDTO;
 import org.example.lab02.entity.Pirata;
 import org.example.lab02.repository.PirataRepository;
 import org.example.lab02.service.PirataService;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.UUID;
 
+@Service
 public class PirataServiceImpl implements PirataService {
 
     private PirataRepository pirataRepository;
