@@ -1,0 +1,6 @@
+name: Lab02-PNC
+variables:
+  - name: BASE_URL
+    value: http://localhost:4000
+  - name: ID
+    value: "0"

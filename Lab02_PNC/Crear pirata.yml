@@ -1,0 +1,24 @@
+info:
+  name: Crear pirata
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{BASE_URL}}/api/pirates/"
+  body:
+    type: json
+    data: |-
+      {
+        "name": "BarbaNegra",
+        "bounty": 1000000,
+        "crew": "AlmasOscuras",
+        "isAlive": true
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

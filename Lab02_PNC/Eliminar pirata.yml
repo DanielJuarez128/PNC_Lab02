@@ -1,0 +1,15 @@
+info:
+  name: Eliminar pirata
+  type: http
+  seq: 9
+
+http:
+  method: DELETE
+  url: "{{BASE_URL}}/api/pirates/{{ID}}"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
